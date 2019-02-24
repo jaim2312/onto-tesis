@@ -1,0 +1,944 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#"
+     xml:base="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:comment>Esta ontologia contendrá el árbol de conocimiento de la rama de tecnologías de la información.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#sinonimo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#sinonimo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Auditoría -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Auditoría">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Gestión"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Cloud_Computing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Cloud_Computing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Programación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Frameworks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Frameworks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Programación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#FrontEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#FrontEnd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Gestión -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Gestión"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Programación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Programación"/>
+        <sinonimo>c++</sinonimo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Metodologías -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Metodologías">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Gestión"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Mobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Mobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Programación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Programación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plugins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plugins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#FrontEnd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Programación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Programación"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Redes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Redes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Versionadores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Versionadores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Web_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Web_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#ABAP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#ABAP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#ASP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#ASP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+        <sinonimo>Active Server Pages,ASP clásico</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#ASP_MVC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#ASP_MVC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#AWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#AWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Access -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Access">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Android -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Android">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Android_Studio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Android_Studio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#AngularJS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#AngularJS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#FrontEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Apple_TV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Apple_TV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Apple_Watch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Apple_Watch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Arduino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Arduino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Assembler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Assembler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Atom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Atom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Azure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Azure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Bash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Bash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+        <sinonimo>Shell</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Bootstrap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Bootstrap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#FrontEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#CCNP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#CCNP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Redes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#CISCO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#CISCO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Redes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#CMMI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#CMMI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Metodologías"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#CSS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#CSS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+        <sinonimo>Hojas de estilo</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#C_Sharp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#C_Sharp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+        <sinonimo>C#,c#</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Cobol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Cobol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Codeigniter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Codeigniter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Django -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Django">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Docker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Docker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Eclipse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Eclipse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Enhancements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Enhancements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Firebase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Firebase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Flask -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Flask">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Git -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Git">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Versionadores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#GitHub -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#GitHub">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Versionadores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#GitLab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#GitLab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Versionadores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Google_Cloud_Platform -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Google_Cloud_Platform">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#HCNP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#HCNP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Redes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#HTML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#HTML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+        <sinonimo>HyperText Markup Language,lenguaje de marcas de hipertexto</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Highcharts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Highcharts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plugins"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#ITIL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#ITIL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Auditoría"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IaaS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IaaS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Cloud_Computing"/>
+        <sinonimo>Infrastructure as a Service</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Ionic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Ionic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Mobile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#JUnit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#JUnit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Testing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Java -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Java">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#JavaScript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#JavaScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Jquery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Jquery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#FrontEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Kotlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Kotlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Laravel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Laravel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Linux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Linux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Mac_OS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Mac_OS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#MariaDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#MariaDB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#MongoDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#MongoDB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#MySQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#MySQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Navicat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Navicat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#NetBeans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#NetBeans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#NodeJs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#NodeJs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Objective-C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Objective-C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#OpenSQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#OpenSQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP"/>
+        <rdfs:comment>Open SQL</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#PHP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#PHP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+        <sinonimo>Hypertext Preprocessor,procesador de hipertexto</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#PHPStorm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#PHPStorm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#PaaS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#PaaS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Cloud_Computing"/>
+        <sinonimo>Platform as a Service</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#PostgreSQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#PostgreSQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Python -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Python">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#QOS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#QOS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Redes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#REST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#REST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Web_Services"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#RUP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#RUP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Metodologías"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Raspberry_Pi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Raspberry_Pi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Ruby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Ruby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Ruby_on_Rails -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Ruby_on_Rails">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+        <sinonimo>RoR,Rails</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP_HANA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP_HANA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD"/>
+        <sinonimo>HANA</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SCRUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SCRUM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Metodologías"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SOAP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SOAP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Web_Services"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SQL_SERVER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SQL_SERVER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SQLite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SQLite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Motores_BD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SaaS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SaaS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Cloud_Computing"/>
+        <sinonimo>Software as a Service</sinonimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Smartforms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Smartforms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Spring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Spring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#BackEnd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Swift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Swift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#TypeScript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#TypeScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#VB.NET -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#VB.NET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#VBA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#VBA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Visual_Basic_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Visual_Basic_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Visual_Code -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Visual_Code">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Visual_Studio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Visual_Studio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#WebStorm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#WebStorm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Windows_Desktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Windows_Desktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Windows_Server -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Windows_Server">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Wordpress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Wordpress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Workflow_SAP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Workflow_SAP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#SAP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Xamarin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Xamarin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Mobile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#iOS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#iOS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Plataforma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#C++ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#C++">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Lenguaje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Core_IP/MPLS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Core_IP/MPLS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jonathan/ontologies/2017/11/TI#Redes"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

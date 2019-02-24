@@ -1,0 +1,36 @@
+.dataTable > tbody > tr .btn-icon{
+	width: 30px;
+	height: 30px;
+}
+
+.dataTable > tbody > tr .card-block.icon-btn{
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.dataTables_wrapper.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.modal .modal-content > .modal-body > .card-block{
+	padding-top: 0;
+}
+
+.swal2-container {
+	z-index: 99999999999;
+}
+
+.dropzone {
+	background: #fff !important;
+	border: 2px dashed #ddd !important;
+	border-radius: 5px;
+}
+
+.dz-message {
+	color: #999;
+}
+
+.dz-message:hover {
+	color: #464646;
+}

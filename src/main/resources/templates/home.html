@@ -1,0 +1,56 @@
+<html xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{layouts/root_layout}">
+	<div layout:fragment="content">
+	<!-- Page header start -->
+	<div class="page-header">
+	    <div class="page-header-title">
+	        <h4 th:inline="text">
+	        	Calificador - [[${cargo.sNombre}]]
+	        </h4>
+	        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+	    </div>
+	    <div class="page-header-breadcrumb">
+	        <ul class="breadcrumb-title">
+	            <li class="breadcrumb-item">
+	                <a href="index-2.html">
+	                    <i class="icofont icofont-home"></i>
+	                </a>
+	            </li>
+	            <li class="breadcrumb-item"><a href="#!">Advance Components</a>
+	            </li>
+	            <li class="breadcrumb-item"><a href="#!">Tree View</a>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+	<!-- Page header end -->
+	<!-- Page-body start -->
+    <div class="page-body">
+		<input id="hdn_cargoid" type="hidden" th:value="${cargo.nId}" />
+		<div class="row">
+			<div class="col-sm-12 col-lg-12">
+				
+			    <!-- Basic Tree card start -->
+			    <div class="card">
+			        <div class="card-header">
+			            <h5 th:inline="text">[[${cargo.sNombre}]]</h5>
+			        </div>
+			        <div class="card-block">
+			            <div class="card-block tree-view">
+							<div id="ontoTree"></div>
+			            </div>
+			        </div>
+			    </div>
+			    <!-- Basic Tree card end -->
+			</div>
+		</div>
+    </div>			
+
+	<!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+	<script src="/scripts/ontologia.js"></script>
+	</div>
+</html>
